@@ -1,0 +1,18 @@
+package de.credit.score;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+
+@SpringBootApplication
+@Configuration
+@ComponentScan({"de.credit.score"})
+public class CreditScoreApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(CreditScoreApplication.class, args);
+	}
+
+}
